@@ -10,6 +10,7 @@ function Joke() {
     setup: "GM, Dogu don't know where you live, but GM!",
     punchline: "",
   });
+  const [dadJoke, setDadJoke] = useState("");
   const [loading, setLoading] = useState(false);
   const [line, setLine] = useState("");
   const baseURL = "https://official-joke-api.appspot.com/jokes/random";
@@ -30,6 +31,19 @@ function Joke() {
     setLine(jokes.punchline);
   };
 
+  const getDadJoke = () => {
+    const axiosConfig = {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    };
+    const baseURL = "https://icanhazdadjoke.com/";
+    axios.get(baseURL, axiosConfig).then((res) => {
+      console.log(res.data.joke);
+    });
+  };
+
   return (
     <div className="bg-amber-200 w-screen h-screen p-10 md:p-20">
       <h1 className="text-2xl text-center md:text-4xl font-bold text-slate-500">
@@ -40,8 +54,12 @@ function Joke() {
         {"< Back to playground"}
       </Link>
       <div className="md:grid grid-cols-2 gap-7 items-center md:w-3/5 h-4/5 my-0 mx-auto">
-        <div className="w-3/5 md:w-4/5 my-0 mx-auto">
-          <img className="" src={dogusit} alt="" />
+        <div className=" md:w-4/5 my-0 mx-auto">
+          <img className="w-3/5 my-0 mx-auto" src={dogusit} alt="" />
+          <div className="flex justify-between">
+            <button className="bg-amber-500 py-2 px-5">Dogu</button>
+            <button className="bg-amber-500 py-2 px-5">Mr. Clay</button>
+          </div>
         </div>
 
         <div>
@@ -68,6 +86,12 @@ function Joke() {
           >
             Punchline
           </button>
+          {/* <button
+            onClick={getDadJoke}
+            className="mt-10 border-solid border-2 border-indigo-400 justify-center py-2 px-6 rounded-full hover:bg-indigo-100"
+          >
+            dad joke
+          </button> */}
         </div>
       </div>
 
