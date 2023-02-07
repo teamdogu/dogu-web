@@ -11,6 +11,7 @@ import uni from "./assets/uni.png";
 import etherscan from "./assets/etherscan.png";
 import dextools from "./assets/dextools.png";
 import mail from "./assets/mail.png";
+import github from "./assets/github.png";
 
 export default function Home() {
   return (
@@ -38,12 +39,15 @@ export default function Home() {
               <a className="mr-3" href="https://t.me/doguai" target="_blank">
                 <img className="w-12" src={telegram} />
               </a>
+              <a className="mr-3" href="mailto:team@dogu.ai" target="_blank">
+                <img className="w-12" src={mail} />
+              </a>
               <a
                 className="mr-5 md:mr-10"
-                href="mailto:team@dogu.ai"
+                href="https://github.com/teamdogu"
                 target="_blank"
               >
-                <img className="w-12" src={mail} />
+                <img className="w-12" src={github} />
               </a>
             </div>
 
