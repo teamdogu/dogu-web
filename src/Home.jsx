@@ -23,9 +23,8 @@ export default function Home() {
             PLAY!
           </h1>
           <p className="text-left tracking-wider leading-10 md:text-xl text-slate-600">
-            Dogu Motion Diffusion AI is your AI pet dog. doguAI turns text into
-            lifelike dog pet animations. Dogu is always ready to play with you
-            whenever you want. The most loved dog AI on the Ethereum Blockchain.
+            DOGU, Your AI pet dog that is always ready to play with you whenever
+            you want. The most loved dog AI on the Ethereum Blockchain.
           </p>
           <div className="md:flex items-center">
             <div className="flex mt-3">
