@@ -93,6 +93,7 @@ function Joke() {
                   setup: "Hi Kid, Good Morning, always morning in here",
                   punchline: "",
                 });
+                setLine("");
               }}
               className={`bg-amber-500 py-2 px-5 ${
                 isDogu ? "bg-white" : "bg-amber-500"
