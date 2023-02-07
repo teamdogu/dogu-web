@@ -152,7 +152,7 @@ export default function Home() {
         <h1 className="md:text-2xl text-slate-500 mb-10">
           GET INVOLVED WITH $doguAI
         </h1>
-        <div className="md:grid grid-cols-3 w-3/5 my-0 mx-auto gap-20">
+        <div className="md:grid grid-cols-4 w-3/5 my-0 mx-auto gap-20">
           <a
             className="flex items-center border-solid border-2 border-indigo-600 justify-center py-2 md:py-6 rounded-full hover:bg-indigo-100 mb-5"
             href="https://app.uniswap.org/#/swap?outputCurrency=0x9a70e0b58e2ce91c3e897ee22e71c02a09c0285b"
@@ -175,6 +175,13 @@ export default function Home() {
           >
             <img className="w-7 mr-6" src={dextools} alt="" />
             <p>Chart</p>
+          </a>
+          <a
+            className="flex items-center border-solid border-2 border-indigo-600 justify-center py-2 md:py-6 rounded-full  hover:bg-indigo-100 mb-5"
+            href=""
+          >
+            {/* <img className="w-7 mr-6" src={dextools} alt="" /> */}
+            <p>Dev Logs</p>
           </a>
         </div>
         <p className="mt-5">dogu.ai&copy;2023</p>
